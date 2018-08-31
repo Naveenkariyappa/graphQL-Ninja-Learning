@@ -10,6 +10,7 @@ class BookDetails extends Component {
                 <h2>{book.name}</h2>
                 <p>Genre: {book.genre}</p>
                 <p>Author: {book.author.name}</p>
+                <p>Age: {book.author.age}</p>
                 <p>All books by this author</p>
                 <ul className="other-books">
                     {

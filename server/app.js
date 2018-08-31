@@ -8,7 +8,12 @@ const cors = require('cors');
 /// allow cross origin requests 
 app.use(cors());
 
-mongoose.connect("mongodb://naveenkariyappa:hellonaveen123@ds139722.mlab.com:39722/gql-ninja");
+// mongoose.connect("mongodb://naveenkariyappa:hellonaveen123@ds139722.mlab.com:39722/gql-ninja");
+// for the mlab DB
+
+mongoose.connect('mongodb://localhost:27017/myapp');
+// local Db
+
 mongoose.connection.once('open',()=>{
     console.log("Connected to database successfully");
 });
